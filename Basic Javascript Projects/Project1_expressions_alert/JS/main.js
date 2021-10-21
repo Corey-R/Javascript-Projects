@@ -14,7 +14,7 @@ document.write(A);
 var X = "This is the string assignment";
 
 // Creating a second alert box to display 
-// the string value assined to variable X
+// the string value assigned to variable X
 window.alert(X);
 
 // Using the backslash to escape characters of 
@@ -25,7 +25,9 @@ document.write( " Peter asked, \"Oh, have you not heard?\" \"Heard what?\" asked
 // Using the plus sign to concatenate or 
 // "put together" two separate string values
 // to combine them
-document.write(" This text includes" + " concatenated string!");
+var Z = " \n This text includes:";
+var Y = " concatenated string!";
+document.write(Z+Y);
 
 // Setting variable C with concatenated string
 // values while using the backslash to display

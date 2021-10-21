@@ -28,3 +28,21 @@ function Click() {
     document.getElementById("concatenate").innerHTML = result;
     document.getElementById("message").innerHTML = action;
 }
+
+
+// Function Challenge
+// Created two functions to allow mouse over
+// and mouse out. 
+
+function Go() {
+    var foo = "Challenge complete!";
+    var dye = foo.fontcolor("blue");
+    document.getElementById("example").innerHTML = dye;
+}
+
+function Out() {
+    var ret = "Example: Hover Over Me!";
+    var back = ret.fontcolor("black");
+    document.getElementById("example").innerHTML = back;
+}
+
