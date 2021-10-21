@@ -6,5 +6,21 @@
         <script src="JS/main.js"></script>
     </head>
     <body>
+        <h1> New HTML Event</h1>
+
+        <button id="demo">Mouse Over Me!</button>
+
+        <script>
+            document.getElementById("demo").onmouseover = function() {mouseOver()};
+            document.getElementById("demo").onmouseout = function() {mouseOut()};
+
+            function mouseOver() {
+                document.getElementById("demo").style.color = "white";
+            }
+
+            function mouseOut() {
+                document.getElementById("demo").style.color = "black";
+            }
+        </script>
     </body>
 </html>
