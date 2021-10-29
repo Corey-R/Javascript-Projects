@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> HTML 2 </title>
+        <script src="Javascript/javascript_2.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="CSS/CSS_1.css">
+    </head>
+
+    <body>
+
+        <h1> HTML 2 CSS & JAVASCRIPT </h1>
+
+        <br>
+
+
+        <!-- CONTACT FORM -->
+        
+
+        <div class="form-container">
+            <h3> Contact Form </h3>
+            <p> Fill out some basic information below: </p>
+
+            <form class="info" name="contact" action="" onsubmit="return validateForm()" method="post">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="First_Name"><br>
+
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="Last_Name"><br>
+
+                <label>Select Age Range:</label><br>
+                <input type="radio" name="age" value="13-20">
+                <label for="teen">13-20</label><br>
+
+                <input type="radio" name="age" value="21-30">
+                <label for="yadult">21-30</label><br>
+
+                <input type="radio" name="age" value="31-59">
+                <label for="adult">31-59</label><br>
+
+                <input type="radio" name="age" value="60+">
+                <label for="aging">60 up</label> <br><br>
+
+                <input type="submit" value="Save">
+            </form>
+        </div>
+        <!-- END CONTACT FORM -->
+    </body>
+</html>

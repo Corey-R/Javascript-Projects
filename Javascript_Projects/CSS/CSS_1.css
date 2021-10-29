@@ -1,0 +1,63 @@
+
+/* CONTACT FORM STYLING */
+
+/* Containers */
+
+.form-container {
+    height: 450px;
+    width: 50%;
+    background-color: #000;
+    color: #fff;
+    border: 5px solid gold;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.info {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 70%;
+    height: 70%;
+    padding-top: 16px;
+    background-color: blue;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+input[type=text] {
+    width: 80%;
+    background: black;
+    margin: 8px 0;
+    height: 10%;
+    color: white;
+}
+
+input[type=text]:focus {
+    background: gold;
+    color: black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    font-weight: bold;
+}
+
+label[for=fname], label[for=lname] {
+    margin-right: 65%;
+}
+
+
+input[type=submit] {
+    background-color: gold;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+}

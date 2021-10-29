@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title> Arrow Function </title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+
+
+        <h1> Arrow Function Challenge</h1>
+        <p> The following will be performed using the function keyword.</p>
+
+        <p id="example"></p>
+     
+
+        <br><br>
+
+        <h3> Using Arrow Function </h3>
+
+        <p> The following example utilizes the arrow shortcut.</p>
+
+        <p id="example2"></p>
+
+
+        
+        <!-- SCRIPT SECTION -->
+
+        <script>
+            
+            var Ex;
+
+            Ex = function() {
+                return "Example Complete";
+            }
+            document.getElementById("example").innerHTML = Ex();
+
+            // Using Arrow Function
+
+            var Ex2;
+            Ex2 = () => "Arrow Example Complete";
+            document.getElementById("example2").innerHTML = Ex2();
+
+        </script>
+        <!-- END SCRIPT SECTION -->
+
+    </body>
+</html>
