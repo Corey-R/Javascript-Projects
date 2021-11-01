@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+
+        </script>
+    </head>
+
+    <script>
+        // Using JQuery to target an element "html"
+        // and the .append() method to add a block of 
+        // string on the end of the targeted element.
+        $(document).ready(function() {
+            $('html').append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic JQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            // This allows us to target a specific paragraph from above
+            // by its id.
+
+            // Note: if you wanted to target all of a specific element 
+            // place only the element in the selector instead of the id.
+            $("#2").css({"color":"red"}); // Using .css() to style paragraph 2 red
+            $("#3").click(function() { // Using click() to add functionality to p3 by clicking it
+                $('h1').hide(); // Using .hide() to hide h1
+            // Note: the above content is the action that will happen
+            // once the h1 element is clicked, without it, nothing happens.
+            });
+        });
+    </script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> DOM </title>
+    </head>
+
+    <body>
+
+        <h1> Using hasFocus() Method </h1>
+        <p> By clicking anywhere within the (p) element, a value will return
+            by using boolean logic.
+        </p>
+
+        <p id="example"></p>
+
+        <script>
+            setInterval("focusExample(), 1");
+            
+            function focusExample() {
+                var a = document.getElementById("example");
+                if (document.hasFocus()) {
+                    a.innerHTML = "Example has focus";
+                }
+                else {
+                    a.innerHTML = "Example does not have focus";
+                }
+            }
+        </script>
+    </body>
+</html>
