@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> XML Example </title>
+    </head>
+
+    <body>
+        <h1> XML Example </h1>
+        <br>
+
+        <p id="XML_Example"></p>
+        
+        <script>
+            var Parse, Doc;
+
+            // Creates a text string
+            var Gym_Member = "<members>" + "<member>" + 
+                "<name>Linda Belcher</name>" + "<id>000232</id>" + 
+                "<birthdate>April 12, 1980</birthdate>" + 
+                "<email>lindBelchAlright@outlook.com</email>" + 
+                "</member>" + "</members>";
+
+                // Create an XML Parser
+                Parse = new DOMParser();
+
+                // Create a new XML DOM object using the text string
+                Doc = Parse.parseFromString(Gym_Member, "text/xml");
+
+                // Calling new XML DOM object to id "XML_Example" in "p" element
+                document.getElementById("XML_Example").innerHTML = 
+                Doc.getElementsByTagName("email")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>

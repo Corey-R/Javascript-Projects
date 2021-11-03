@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> JSON Stringify Example</title>
+
+    </head>
+
+    <body>
+        <h1> JSON Stringify Method </h1>
+        <p> Using the JSON.stringify() method to convert
+            a javascript object into a string to be displayed
+            (stored) in the web browser.
+        </p>
+
+        <p id="string"></p>
+        <br>
+
+        <h2> Convert JSONstring to Javascript Object</h2>
+
+        <p id="object"></p>
+        <br>
+
+        <h2> LocalStorage.getItem Method</h2>
+        
+        <p id="git"></p>
+
+        <script> 
+            // Javascript dictionary object 
+            var house = {type: "Mobile", bedrooms: "3", bathrooms: "2 1/2"};
+
+            // Convert javascript object to string format
+            var convert = JSON.stringify(house);
+            document.getElementById("string").innerHTML = 
+            convert;
+
+            // Crete variable for new JSONstring
+            var letters = '{"type": "Mobile", "bedrooms": "3", "bathrooms": "2 1/2"}';
+
+            // Convert JSONstring back to Javascript Object
+            var revert = JSON.parse(letters);
+            document.getElementById("object").innerHTML = 
+            "This " + revert.type + " home has " + revert.bedrooms + 
+            " bedrooms and " + revert.bathrooms + " bathrooms!";
+
+            // set the data as a key/value pair to be stored
+            localStorage.setItem("Name", "Jeffrey");
+
+            // Use the key "Name" to return the value "Jeffrey"
+            document.getElementById("git").innerHTML = localStorage.getItem("Name");
+        </script>
+
+    </body>
+</html>

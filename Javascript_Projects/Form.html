@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Form With Phone# </title>
+        <script src="Javascript/form.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="CSS/form.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+        </script>
+
+        
+        
+    </head>
+
+    <body>
+        <h1 id="colour" ondblclick="swap()"> Form & Phone Number </h1>
+        <hr> <!-- USING HORIZONTAL RULE -->
+
+        <p> NOTE: Double Click the heading above to change its color!</p>
+
+        <p> Creating a form with added phone number that will be validated by javascript.</p>
+        <p> Use <a href="#popup">This Link</a> to check out the popup contact form.</p>
+
+        <!-- SLIDE SHOW -->
+
+        <div id="slideshow">
+            <div class="text-style">
+                <h2 class="text">Example Slideshow</h2>
+            </div>
+            <div>
+                <img src="images/thumbnail_1.png" alt="orchid">
+            </div>
+            <div>
+                <img src="images/thumbnail_3.png" alt="sadira">
+            </div>
+            <div>
+                <img src="images/thumbnail_4.png" alt="maya">
+            </div>
+        </div>
+
+        <!-- /SLIDE SHOW -->
+
+        <h3 id="popup"> Popup Form</h3>
+
+        <p class="spacing"> In the bottom right corner, you'll find a button that
+            will open a popup box with a registration form when clicked.
+        </p>
+
+        <button class="open-button" onclick="Register()">Register Today!</button>
+
+        <div class="Form" id="phone">
+            <form class="form-container" name="Registration" action="" onsubmit="return validation()" method="post">
+                <h1>Register Here</h1>
+                <label for="First Name" id="fname">First Name:</label>
+                <input type="text" name="fname" id="First Name" placeholder="First Name..." required>
+                <label for="Last Name" id="lname">Last Name:</label>
+                <input type="text" name="lname" id="Last Name" placeholder="Last Name..." required>
+                <label for="Phone Number" id="phone">Phone Number:</label>
+                <input type="number" class="btn" name="phone" id="Phone Number" placeholder="Phone Number..." required>
+                
+                <button type="submit" class="btn" name="Submit">Register</button>
+                <button type="button" class="btn cancel" onclick="Close()">Cancel</button>
+            </form>
+        </div>
+
+        <!-- JQUERY -->
+        <script>
+            $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function() {
+            $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+            }, 3000);
+        </script>
+    </body>
+</html>
