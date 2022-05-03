@@ -9,8 +9,8 @@
 
 function Orange() {
     var str = "Happy Halloween!";
-    var result = str.fontcolor("orange");
-    document.getElementById("Happy").innerHTML = result;
+    str = str.fontcolor("orange");
+    document.getElementById("Happy").innerHTML = str;
 }
 
 
@@ -21,12 +21,12 @@ function Orange() {
 function Click() {
     var sentence = "Be sure to";
     sentence += " eat LOTS of delicious candy!";
-    var result = sentence.fontcolor("darkred");
+    sentence = sentence.fontcolor("darkred");
     var word = "Look";
     word += " UP!";   
-    var action = word.fontcolor("red"); 
-    document.getElementById("concatenate").innerHTML = result;
-    document.getElementById("message").innerHTML = action;
+    word = word.fontcolor("red"); 
+    document.getElementById("concatenate").innerHTML = sentence;
+    document.getElementById("message").innerHTML = word;
 }
 
 
@@ -36,13 +36,13 @@ function Click() {
 
 function Go() {
     var foo = "Challenge complete!";
-    var dye = foo.fontcolor("blue");
-    document.getElementById("example").innerHTML = dye;
+    foo = foo.fontcolor("blue");
+    document.getElementById("example").innerHTML = foo;
 }
 
 function Out() {
     var ret = "Example: Hover Over Me!";
-    var back = ret.fontcolor("black");
-    document.getElementById("example").innerHTML = back;
+    ret = ret.fontcolor("black");
+    document.getElementById("example").innerHTML = ret;
 }
 

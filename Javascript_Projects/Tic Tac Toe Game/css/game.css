@@ -1,6 +1,6 @@
 /* This container includes our table and our canvas. */
 .center-container {
-    /* This property sets the width of our ontainer. */
+    /* This property sets the width of our container. */
     width: 600px;
     /* This property centers our container. */
     margin: 0 auto;
@@ -46,4 +46,46 @@ h1 {
 
 body {
     background-color: red;
+}
+
+/*====================
+    SCOREBOARD
+ ======================
+*/
+.Scoreboard-Container {
+    background: black;
+    width: 200px;
+    height: 135px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid cornsilk;
+    border-radius: 20px;        
+    margin: 20px auto;    
+}
+
+.Titles {
+    font-weight: bolder;
+    font-size: 30px;     
+    background: -webkit-linear-gradient(blue, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Scores {
+    list-style: none;
+    text-align: left;
+}
+
+.Scores li {
+    margin-bottom: 10px;
+}
+
+#playerScore {
+    margin-left: 10px;
+}
+#cpuScore {
+    margin-left: 20px;
 }
